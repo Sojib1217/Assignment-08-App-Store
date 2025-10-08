@@ -6,7 +6,7 @@ import gitImg from '../../assets/github-logo.png'
 const Navbar = () => {
     const links=<> 
     <Link to={'/'}><li className='m-2'>Home</li></Link>
-    <Link to={'/apps'}><li className='m-2'>About</li></Link>
+    <Link to={'/apps'}><li className='m-2'>Apps</li></Link>
     <Link to={'/'}><li className='m-2'>Installation</li></Link>
     </>
     return (
@@ -24,15 +24,16 @@ const Navbar = () => {
       }
       </ul>
     </div>
-    <a className="btn btn-ghost text-xl"><img className='w-7 md:w-10' src={navImg} alt="" /> Book Fair</a>
+    <a href='http://localhost:5174' className="btn btn-ghost text-xl"><img className='w-7 md:w-10' src={navImg} alt="" />HERO.IO</a>
   </div>
   <div className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal px-1">
       {links}
     </ul>
+    
   </div>
   <div className="navbar-end">
-    <a className="btn btn-active bg-gradient-to-r from-green-500 to-amber-400"><img src={gitImg} alt="" /> contribute</a>
+    <a href="https://github.com/Sojib1217/Assignment-08-App-Store.git" className="btn btn-active bg-gradient-to-r from-purple-700 to-purple-500 text-white"><img src={gitImg} alt="" /> Contribute</a>
   
   </div>
 </div>
