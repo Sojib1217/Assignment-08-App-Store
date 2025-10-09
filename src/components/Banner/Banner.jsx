@@ -11,8 +11,8 @@ const Banner = () => {
                 <span className='bg-gradient-to-r from-purple-700 to-purple-500 inline-block text-transparent bg-clip-text'>Productive</span> Apps</h1>
             <p className='text-lg p-4 w-full md:w-2/3 mx-auto mt-4 opacity-60'>At HERO.IO, we craft innovative apps designed to make everyday life simpler, smarter, and more exciting. Our goal is to turn your ideas into digital experiences that truly make an impact.</p>
             <div className='flex gap-6 justify-center items-center mt-4'>
-                <button className='btn font-bold'><img className='w-5' src={gImg} alt="" /> Google Play</button>
-                <button className='btn font-bold '><img className='w-5' src={appImg} alt="" /> App Store</button>
+              <a href="https://play.google.com/store/games?device=windows">  <button className='btn font-bold'><img className='w-5' src={gImg} alt="" /> Google Play</button></a>
+                <a href='https://www.apple.com/app-store/'><button className='btn font-bold '><img className='w-5' src={appImg} alt="" /> App Store</button></a>
             </div>
 
             <div className='mt-10 '>

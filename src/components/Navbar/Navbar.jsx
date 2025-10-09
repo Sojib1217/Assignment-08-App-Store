@@ -5,9 +5,9 @@ import gitImg from '../../assets/github-logo.png'
 
 const Navbar = () => {
     const links=<> 
-    <Link to={'/'}><li className='m-2'>Home</li></Link>
-    <Link to={'/apps'}><li className='m-2'>Apps</li></Link>
-    <Link to={'/'}><li className='m-2'>Installation</li></Link>
+    <Link to={'/'}><li className='m-2 text-lg'>Home</li></Link>
+    <Link to={'/apps'}><li className='m-2 text-lg'>Apps</li></Link>
+    <Link to={'/installation'}><li className='m-2 text-lg'>Installation</li></Link>
     </>
     return (
          <div className="navbar bg-base-100 shadow-sm md:px-10">
@@ -24,7 +24,7 @@ const Navbar = () => {
       }
       </ul>
     </div>
-    <a href='http://localhost:5174' className="btn btn-ghost text-xl"><img className='w-7 md:w-10' src={navImg} alt="" />HERO.IO</a>
+    <a href='http://localhost:5173' className="btn btn-ghost text-xl"><img className='w-7 md:w-10' src={navImg} alt="" />HERO.IO</a>
   </div>
   <div className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal px-1">
@@ -33,7 +33,7 @@ const Navbar = () => {
     
   </div>
   <div className="navbar-end">
-    <a href="https://github.com/Sojib1217/Assignment-08-App-Store.git" className="btn btn-active bg-gradient-to-r from-purple-700 to-purple-500 text-white"><img src={gitImg} alt="" /> Contribute</a>
+    <a href="https://github.com/Sojib1217" className="btn btn-active bg-gradient-to-r from-purple-700 to-purple-500 text-white"><img src={gitImg} alt="" /> Contribute</a>
   
   </div>
 </div>

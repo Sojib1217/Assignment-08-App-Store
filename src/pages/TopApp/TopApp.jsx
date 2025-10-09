@@ -1,11 +1,11 @@
 import React from 'react';
-import iconRating from '../../../assets/icon-ratings.png'
-import iconDownld from '../../../assets/icon-downloads.png'
+import iconRating from '../../assets/icon-ratings.png'
+import iconDownld from '../../assets/icon-downloads.png'
 
 const TopApp = ({app}) => {
     const {image,title,ratingAvg,downloads,description}=app
     return (
-        <div className='bg-white mt-10 shadow p-4 rounded-xl'>
+        <div className='bg-white mt-10 shadow p-4 rounded-xl hover:scale-105 transition'>
             <div className='flex flex-col justify-center items-center'>
                 <img className='w-[320px] h-[320px] rounded-2xl' src={image} alt="" />
             <h4 className='text-xl font-semibold mt-2'>{title}</h4>
