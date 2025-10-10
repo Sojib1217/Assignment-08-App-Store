@@ -24,7 +24,7 @@ const Navbar = () => {
       }
       </ul>
     </div>
-    <a href='http://localhost:5173' className="btn btn-ghost text-xl"><img className='w-7 md:w-10' src={navImg} alt="" />APP-ZONE</a>
+   <Link to={'/'}> <a className="btn btn-ghost text-xl"><img className='w-7 md:w-10' src={navImg} alt="" />APP-ZONE</a></Link>
   </div>
   <div className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal px-1">
