@@ -7,7 +7,7 @@ const TopApps = ({topApps}) => {
         <div className='mt-10  mx-10 '>
             <h1 className='text-4xl text-center font-bold'>Trending Apps</h1>
             <p className='opacity-70 mt-4 text-center'>Explore All Trending Apps on the Market developed by us</p>
-              <div className='grid grid-cols-4 gap-4'>
+              <div className='grid grid-cols-1 md:grid-cols-4 gap-4'>
                 {
                     topApps.slice(0,8).map(app=><TopApp key={app.id} app={app}></TopApp>)
                 }

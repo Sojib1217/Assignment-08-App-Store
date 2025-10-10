@@ -3,7 +3,7 @@ import { useLoaderData, useParams } from 'react-router';
 import iconRating from '../../assets/icon-ratings.png'
 import iconDownld from '../../assets/icon-downloads.png'
 import reviewImg from '../../assets/icon-review.png'
-import { Bar, CartesianGrid, ComposedChart, Legend, Tooltip, XAxis, YAxis } from 'recharts';
+import { Bar, CartesianGrid, ComposedChart, Legend, ResponsiveContainer, Tooltip, XAxis, YAxis } from 'recharts';
 import { ToastContainer, toast } from 'react-toastify';
 import { setAppDataToLocal } from '../AddToDb';
 
@@ -30,8 +30,8 @@ const AppDetails = () => {
         
     }
     return (
-        <div className='pt-10 bg-[#d2d2d254] md:px-20'>
-            <div className='flex flex-col md:flex-row items-center  md:gap-10'>
+        <div className='pt-10 bg-[#d2d2d254] px-6 md:px-20'>
+            <div className='flex flex-col items-center md:flex-row md:items-center  md:gap-10'>
                 <img src={image} className="md:w-[350px] md:h-[290px] rounded-lg shadow-md" />
                 <div className='w-full'>
                     <h1 className="text-3xl font-bold">{title}</h1>
@@ -39,7 +39,7 @@ const AppDetails = () => {
                     </p>
                     <p className='mt-2'> Developed By : <span className='text-purple-600'>{companyName}</span></p>
                     <hr className='opacity-10 mt-4' />
-                    <div className='flex gap-10 mt-4 '>
+                    <div className='flex items-center justify-center gap-4 md:gap-10 md:justify-start mt-4 '>
                         <div>
                             <img src={iconDownld} alt="" />
                             <p>Downloads</p>
@@ -67,6 +67,7 @@ const AppDetails = () => {
                 <h1 className='text-2xl font-semibold text-center'>Ratings</h1>
 
                 <div>
+                  
                     <ComposedChart
                         layout="vertical"
                         width={1400}
@@ -85,9 +86,10 @@ const AppDetails = () => {
                         <Tooltip />
                         <Legend />
 
-                        <Bar dataKey="count" fill="#ff8811" />
+                        <Bar className='w-[350px] md:w-[1400px] ' dataKey="count" fill="#ff8811" />
 
                     </ComposedChart>
+                    
 
 
                 </div>

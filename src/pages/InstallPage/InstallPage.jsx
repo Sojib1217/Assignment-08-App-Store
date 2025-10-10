@@ -45,7 +45,7 @@ const InstallPage = () => {
                 <h1 className='text-4xl font-bold'>Your Installed Apps</h1>
                 <p className='text-xl opacity-60 mt-3 '>Explore All Trending Apps on the Market developed by us</p>
             </div>
-            <div className='flex justify-between items-center mt-10 md:px-24'>
+            <div className='flex justify-between items-center mt-10 px-4 md:px-24'>
                 <h1 className='text-2xl font-bold '>{installApp.length} App Found</h1>
 
                 <div className="dropdown dropdown-start">
@@ -56,7 +56,7 @@ const InstallPage = () => {
                     </ul>
                 </div>
             </div>
-            <div className='mt-6 md:px-24 pb-10'>
+            <div className='mt-6 px-2 md:px-24 pb-10'>
                 {
                     installApp.map(app => <InstalledApp key={app.id} handleRemove={handleRemove} app={app}></InstalledApp>)
                 }

@@ -10,7 +10,7 @@ const InstalledApp = ({app,handleRemove}) => {
 
     const {title,image,ratingAvg,downloads,size,id}=app
     return (
-        <div className='flex justify-between items-center bg-white mt-6 p-4'>
+        <div className='flex justify-between items-center bg-white mt-6 p-4 rounded-2xl'>
            <div className='flex gap-4 items-center'>
              <img className='w-20 h-20' src={image} alt="" />
              <div>

@@ -6,6 +6,7 @@ import Banner from '../components/Banner/Banner'
 import AppDetails from '../pages/AppDetails/AppDetails'
 import Error from '../pages/Error/Error'
 import InstallPage from '../pages/InstallPage/InstallPage'
+import AppError from '../pages/AppError/AppError'
 
 export const router=createBrowserRouter([
   {
@@ -22,7 +23,7 @@ export const router=createBrowserRouter([
        
         {
             path:'/apps',
-            
+            errorElement:<AppError></AppError>,
             loader:()=>fetch('/apps.json'),
             Component:Apps
         },

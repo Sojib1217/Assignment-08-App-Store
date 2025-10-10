@@ -31,17 +31,17 @@ const Apps = () => {
         <div className='pt-10 bg-[#d2d2d254] pb-10'>
             <h1 className='text-3xl font-bold text-center'>Our All Applications</h1>
             <p className='mt-4 text-lg opacity-60 text-center'>Explore All Apps on the Market developed by us. We code for Millions</p>
-            <div className='flex justify-between mx-20 mt-10'>
-                <h1 className='text-2xl font-bold'>({appsData.length}) Apps Found</h1>
-                <div className='relative w-[350px]'>
+            <div className='md:flex justify-between mt-5 mx-4 md:mx-20 md:mt-10'>
+                <h1 className='text-2xl font-bold text-center'>({appsData.length}) Apps Found</h1>
+                <div className='relative w-[350px] mt-4 md:-mt-4'>
                     <CiSearch className='absolute top-4 left-3' />
-                    <input className='px-8 py-3 w-full border rounded-xl' value={search} onChange={(e) => setSearch(e.target.value)} type="search" name="" placeholder='search Apps' />
+                    <input className='px-8 py-3 w-full border rounded-xl ' value={search} onChange={(e) => setSearch(e.target.value)} type="search" name="" placeholder='search Apps' />
 
                 </div>
             </div>
             {loading ? (<LoaderSpinner />) :
                 filteredApp.length > 0 ? (
-                    <div className="grid grid-cols-1 md:grid-cols-4 gap-4 mx-20">
+                    <div className="grid grid-cols-1 mx-4 md:grid-cols-4 gap-4 md:mx-20">
                         {filteredApp.map(app => <AllApps key={app.id} app={app}></AllApps>)}
                     </div>
                 ) : (
