@@ -9,9 +9,9 @@ const Footer = () => {
           
           <div  className='flex items-center'>
 <img className='w-6 h-6' src={logoImg} alt="" />
-          <h4>HERO.IO</h4>
+          <h4>APP-ZONE</h4>
           </div>
-          <p className='md:w-[250px]'>At HERO.IO, we craft innovative apps designed to make everyday life simpler, smarter, and more exciting. Our goal is to turn your ideas into digital experiences that truly make an impact.
+          <p className='md:w-[250px]'>At APP-ZONE, we craft innovative apps designed to make everyday life simpler, smarter, and more exciting. Our goal is to turn your ideas into digital experiences that truly make an impact.
 
 </p>
          
